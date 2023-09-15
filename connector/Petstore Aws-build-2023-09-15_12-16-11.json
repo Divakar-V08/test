@@ -1,0 +1,128 @@
+{
+  "id" : "6502fd517128723d58e96f4d",
+  "cts" : 1694694737876,
+  "createdUserName" : "Akash K",
+  "modifiedUserName" : "Darshan Shivashankar",
+  "mts" : 1694760335704,
+  "createdBy" : "63bff68fbbc57e4aeec1ef16",
+  "modifiedBy" : "60367d4038e56d398c70be6f",
+  "type" : "HTTP",
+  "name" : "Petstore Aws",
+  "description" : "Swagger Documentation for Petstore Aws",
+  "tags" : { },
+  "disableExecuteApiEndpoint" : true,
+  "binaryMediaTypes" : [ ],
+  "enableContentEncoding" : false,
+  "resources" : [ {
+    "name" : "/store/order",
+    "childResources" : { },
+    "methods" : {
+      "POST" : {
+        "throttlingSettings" : { },
+        "integrationResponse" : { },
+        "methodResponse" : { },
+        "httpRoute" : {
+          "routeId" : "yiehvg2",
+          "authorizationType" : "NONE",
+          "authorizer" : { },
+          "routeKey" : "POST /store/order",
+          "target" : "6c2a1cc0339b470b8f6ae3fc87a4957e"
+        }
+      }
+    },
+    "path" : "/store/order"
+  }, {
+    "name" : "/pet/{id}",
+    "childResources" : { },
+    "methods" : {
+      "GET" : {
+        "throttlingSettings" : { },
+        "integrationResponse" : { },
+        "methodResponse" : { },
+        "httpRoute" : {
+          "routeId" : "j0p470g",
+          "authorizationType" : "NONE",
+          "authorizer" : { },
+          "routeKey" : "GET /pet/{id}",
+          "target" : "3a16c774113b4c79a8e5a1053b07ee22"
+        }
+      }
+    },
+    "path" : "/pet/{id}"
+  } ],
+  "httpIntegration" : [ {
+    "id" : "6c2a1cc0339b470b8f6ae3fc87a4957e",
+    "integrationId" : "d70acel",
+    "connectionType" : "INTERNET",
+    "integrationMethod" : "POST",
+    "integrationType" : "HTTP_PROXY",
+    "uri" : "https://petstore3.swagger.io/api/v3/store/order",
+    "type" : "HTTP URI",
+    "queryRequestParameter" : [ ],
+    "headerRequestParameter" : [ ],
+    "pathRequestParameter" : [ ],
+    "requestParameters" : { },
+    "responseParameters" : { },
+    "timeoutInMillis" : 30000,
+    "enablePermission" : false,
+    "count" : 1
+  }, {
+    "id" : "3a16c774113b4c79a8e5a1053b07ee22",
+    "integrationId" : "ugvjz29",
+    "connectionType" : "INTERNET",
+    "integrationMethod" : "GET",
+    "integrationType" : "HTTP_PROXY",
+    "uri" : "https://petstore3.swagger.io/api/v3/pet/{id}",
+    "type" : "HTTP URI",
+    "queryRequestParameter" : [ ],
+    "headerRequestParameter" : [ ],
+    "pathRequestParameter" : [ ],
+    "requestParameters" : { },
+    "responseParameters" : { },
+    "timeoutInMillis" : 30000,
+    "enablePermission" : false,
+    "count" : 1
+  } ],
+  "models" : [ ],
+  "connectorId" : "64c8a87463b9e7558e0251a3",
+  "apiId" : "xo41abtymi",
+  "authorizers" : [ ],
+  "gatewayResponse" : [ ],
+  "requestValidators" : [ ],
+  "scmUpload" : {
+    "repoName" : "test",
+    "branch" : "main",
+    "hostUrl" : "https://github.com/Divakar-V08/test.git",
+    "folderName" : "connector",
+    "commitMessage" : "aws",
+    "token" : "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",
+    "scmSource" : "git",
+    "username" : "Divakar-V08",
+    "password" : "",
+    "authType" : "token"
+  },
+  "throttleSettings" : { },
+  "stage" : {
+    "id" : "6502fd627128723d58e96f4f",
+    "deploymentId" : "torpio",
+    "stageName" : "DevTest1",
+    "tags" : { },
+    "variables" : { },
+    "apiId" : "6502fd517128723d58e96f4d",
+    "stageDescription" : "DevTest1",
+    "defaultRouteSettings" : {
+      "dataTraceEnabled" : false,
+      "throttlingBurstLimit" : 1000,
+      "throttlingRateLimit" : 1000.0
+    },
+    "autoDeploy" : false,
+    "methodSettings" : { },
+    "enableAccessLogging" : false,
+    "enableThrottling" : true,
+    "accessLogFormat" : "",
+    "type" : "HTTP",
+    "accessLogARN" : "",
+    "invokeURL" : "https://xo41abtymi.execute-api.us-east-2.amazonaws.com/DevTest1"
+  },
+  "existing" : true
+}
