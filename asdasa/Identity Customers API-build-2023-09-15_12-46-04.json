@@ -1,0 +1,3141 @@
+{
+  "id" : "64fec64dee8e9922c4337ef2",
+  "cts" : 1694418505381,
+  "createdUserName" : "vidya.wiz vidya.wiz",
+  "modifiedUserName" : "vidya.wiz vidya.wiz",
+  "mts" : 1694781934298,
+  "createdBy" : "6454a1d660f0577244784ac0",
+  "modifiedBy" : "6454a1d660f0577244784ac0",
+  "type" : "REST",
+  "name" : "Identity Customers API",
+  "description" : "Swagger Documentation for Identity Customers API",
+  "tags" : { },
+  "disableExecuteApiEndpoint" : true,
+  "endpointConfiguration" : {
+    "type" : "REGIONAL",
+    "vpcEndpointIds" : [ ]
+  },
+  "apiKeySource" : "HEADER",
+  "binaryMediaTypes" : [ "media/png" ],
+  "enableContentEncoding" : false,
+  "minimumCompressionSize" : 0,
+  "resources" : [ {
+    "name" : "/",
+    "childResources" : {
+      "/password" : {
+        "cors" : {
+          "name" : "Cors Policy",
+          "description" : "Cors Policy",
+          "scope" : [ "METHOD" ],
+          "type" : "Cors Policy",
+          "enforce" : false,
+          "policyElements" : {
+            "accessControlAllowHeader" : "Content-Type,Authorization,X-Api-Key,XMLHTTPRequest,Access-Control-Allow-Origin",
+            "accessControlAllowOrigin" : "'*'",
+            "accessControlMaxAge" : 0,
+            "methods" : [ "POST" ]
+          }
+        },
+        "operation" : "UPDATE",
+        "name" : "/password",
+        "childResources" : {
+          "/transaction" : {
+            "cors" : {
+              "name" : "Cors Policy",
+              "description" : "Cors Policy",
+              "scope" : [ "METHOD" ],
+              "type" : "Cors Policy",
+              "enforce" : false,
+              "policyElements" : {
+                "accessControlAllowHeader" : "Content-Type,Authorization,X-Api-Key,XMLHTTPRequest,Access-Control-Allow-Origin",
+                "accessControlAllowOrigin" : "'*'",
+                "accessControlMaxAge" : 0,
+                "methods" : [ "POST" ]
+              }
+            },
+            "operation" : "UPDATE",
+            "name" : "/transaction",
+            "childResources" : {
+              "/forgot" : {
+                "cors" : {
+                  "name" : "Cors Policy",
+                  "description" : "Cors Policy",
+                  "scope" : [ "METHOD" ],
+                  "type" : "Cors Policy",
+                  "enforce" : false,
+                  "policyElements" : {
+                    "accessControlAllowHeader" : "Content-Type,Authorization,X-Api-Key,XMLHTTPRequest,Access-Control-Allow-Origin",
+                    "accessControlAllowOrigin" : "'*'",
+                    "accessControlMaxAge" : 0,
+                    "methods" : [ "POST" ]
+                  }
+                },
+                "operation" : "UPDATE",
+                "name" : "/forgot",
+                "childResources" : { },
+                "methods" : {
+                  "POST" : {
+                    "methodRequest" : {
+                      "apiKeyRequired" : false,
+                      "authorizationType" : "NONE",
+                      "requestModels" : {
+                        "application/json" : {
+                          "modelId" : "ce75ec245ac445f8834a6ca2773fcf0e",
+                          "modelName" : "ResetPasswordReq"
+                        }
+                      },
+                      "headerRequestParameter" : [ {
+                        "name" : "method.request.header.Content-Type",
+                        "required" : false,
+                        "caching" : false
+                      }, {
+                        "name" : "method.request.header.Accept",
+                        "required" : false,
+                        "caching" : false
+                      }, {
+                        "name" : "method.request.header.Authorization",
+                        "required" : false,
+                        "caching" : false
+                      } ]
+                    },
+                    "integrationRequest" : {
+                      "connectionType" : "INTERNET",
+                      "httpMethod" : "POST",
+                      "queryRequestParameter" : [ ],
+                      "headerRequestParameter" : [ {
+                        "name" : "integration.request.header.Content-Type",
+                        "value" : "method.request.header.Content-Type",
+                        "caching" : false
+                      }, {
+                        "name" : "integration.request.header.Accept",
+                        "value" : "method.request.header.Accept",
+                        "caching" : false
+                      }, {
+                        "name" : "integration.request.header.Authorization",
+                        "value" : "method.request.header.Authorization",
+                        "caching" : false
+                      } ],
+                      "pathRequestParameter" : [ ],
+                      "defaultTimeout" : true,
+                      "timeoutInMillis" : 50,
+                      "type" : "HTTP",
+                      "integrationType" : "HTTP",
+                      "uri" : "https://mock.apiwiz.io/V1/identity/customers/password/transaction/forgot",
+                      "cacheCredentials" : "NONE"
+                    },
+                    "integrationResponse" : {
+                      "200" : {
+                        "responseParameters" : [ {
+                          "name" : "method.response.header.Access-Control-Allow-Origin",
+                          "value" : "'*'",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Origin",
+                          "value" : "'*'",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Origin",
+                          "value" : "'*'",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Origin",
+                          "value" : "'*'",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Origin",
+                          "value" : "'*'",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Origin",
+                          "value" : "'*'",
+                          "caching" : false
+                        } ],
+                        "selectionPattern" : "200"
+                      }
+                    },
+                    "methodResponse" : {
+                      "200" : {
+                        "responseModels" : {
+                          "application/json" : {
+                            "modelId" : "fe071d07e11348f482479aa7aea88870",
+                            "modelName" : "Response"
+                          }
+                        },
+                        "responseParameters" : [ {
+                          "name" : "method.response.header.Access-Control-Allow-Origin",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Origin",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Origin",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Origin",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Origin",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Origin",
+                          "required" : false,
+                          "caching" : false
+                        } ]
+                      }
+                    },
+                    "path" : "POST /password/transaction/forgot"
+                  },
+                  "OPTIONS" : {
+                    "methodRequest" : {
+                      "apiKeyRequired" : false,
+                      "authorizationType" : "NONE"
+                    },
+                    "integrationRequest" : {
+                      "connectionType" : "INTERNET",
+                      "queryRequestParameter" : [ ],
+                      "headerRequestParameter" : [ ],
+                      "pathRequestParameter" : [ ],
+                      "requestTemplates" : [ {
+                        "name" : "Mapping Template",
+                        "description" : "Mapping Template",
+                        "scope" : [ "METHOD" ],
+                        "type" : "Mapping Template",
+                        "policyElements" : {
+                          "application/json" : "{\"statusCode\": 200}"
+                        }
+                      } ],
+                      "defaultTimeout" : true,
+                      "timeoutInMillis" : 50,
+                      "type" : "MOCK",
+                      "cacheCredentials" : "NONE"
+                    },
+                    "integrationResponse" : {
+                      "200" : {
+                        "responseParameters" : [ {
+                          "name" : "method.response.header.Access-Control-Allow-Methods",
+                          "value" : "POST,OPTIONS",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Origin",
+                          "value" : "'*'",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Headers",
+                          "value" : "Content-Type,Authorization,X-Api-Key,XMLHTTPRequest,Access-Control-Allow-Origin",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Expose-Headers",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Credentials",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Max-Age",
+                          "value" : "0",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Methods",
+                          "value" : "POST,OPTIONS",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Origin",
+                          "value" : "'*'",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Headers",
+                          "value" : "Content-Type,Authorization,X-Api-Key,XMLHTTPRequest,Access-Control-Allow-Origin",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Expose-Headers",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Credentials",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Max-Age",
+                          "value" : "0",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Methods",
+                          "value" : "POST,OPTIONS",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Origin",
+                          "value" : "'*'",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Headers",
+                          "value" : "Content-Type,Authorization,X-Api-Key,XMLHTTPRequest,Access-Control-Allow-Origin",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Expose-Headers",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Credentials",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Max-Age",
+                          "value" : "0",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Methods",
+                          "value" : "POST,OPTIONS",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Origin",
+                          "value" : "'*'",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Headers",
+                          "value" : "Content-Type,Authorization,X-Api-Key,XMLHTTPRequest,Access-Control-Allow-Origin",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Expose-Headers",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Credentials",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Max-Age",
+                          "value" : "0",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Methods",
+                          "value" : "POST,OPTIONS",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Origin",
+                          "value" : "'*'",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Headers",
+                          "value" : "Content-Type,Authorization,X-Api-Key,XMLHTTPRequest,Access-Control-Allow-Origin",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Expose-Headers",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Credentials",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Max-Age",
+                          "value" : "0",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Methods",
+                          "value" : "POST,OPTIONS",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Origin",
+                          "value" : "'*'",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Headers",
+                          "value" : "Content-Type,Authorization,X-Api-Key,XMLHTTPRequest,Access-Control-Allow-Origin",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Expose-Headers",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Credentials",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Max-Age",
+                          "value" : "0",
+                          "caching" : false
+                        } ]
+                      }
+                    },
+                    "methodResponse" : {
+                      "200" : {
+                        "responseParameters" : [ {
+                          "name" : "method.response.header.Access-Control-Allow-Methods",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Origin",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Headers",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Expose-Headers",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Credentials",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Max-Age",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Methods",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Origin",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Headers",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Expose-Headers",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Credentials",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Max-Age",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Methods",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Origin",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Headers",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Expose-Headers",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Credentials",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Max-Age",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Methods",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Origin",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Headers",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Expose-Headers",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Credentials",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Max-Age",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Methods",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Origin",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Headers",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Expose-Headers",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Credentials",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Max-Age",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Methods",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Origin",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Headers",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Expose-Headers",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Credentials",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Max-Age",
+                          "required" : false,
+                          "caching" : false
+                        } ]
+                      }
+                    },
+                    "path" : "OPTIONS /password/transaction/forgot"
+                  }
+                },
+                "parentId" : "ydu7a9",
+                "id" : "b098nk",
+                "path" : "/password/transaction/forgot",
+                "resourceId" : "edbeba231b894aeaa51d60e38d2e69d7"
+              }
+            },
+            "methods" : {
+              "POST" : {
+                "methodRequest" : {
+                  "apiKeyRequired" : false,
+                  "authorizationType" : "NONE",
+                  "requestModels" : {
+                    "application/json" : {
+                      "modelId" : "5bcb8a4db02745358bd29ce697c9e2df",
+                      "modelName" : "ResetUserReq"
+                    }
+                  },
+                  "queryRequestParameter" : [ {
+                    "name" : "method.request.querystring.token",
+                    "required" : false,
+                    "caching" : false
+                  } ],
+                  "headerRequestParameter" : [ {
+                    "name" : "method.request.header.Content-Type",
+                    "required" : false,
+                    "caching" : false
+                  }, {
+                    "name" : "method.request.header.Accept",
+                    "required" : false,
+                    "caching" : false
+                  }, {
+                    "name" : "method.request.header.Authorization",
+                    "required" : false,
+                    "caching" : false
+                  } ]
+                },
+                "integrationRequest" : {
+                  "connectionType" : "INTERNET",
+                  "httpMethod" : "POST",
+                  "queryRequestParameter" : [ {
+                    "name" : "integration.request.querystring.token",
+                    "value" : "method.request.querystring.token",
+                    "caching" : false
+                  } ],
+                  "headerRequestParameter" : [ {
+                    "name" : "integration.request.header.Content-Type",
+                    "value" : "method.request.header.Content-Type",
+                    "caching" : false
+                  }, {
+                    "name" : "integration.request.header.Accept",
+                    "value" : "method.request.header.Accept",
+                    "caching" : false
+                  }, {
+                    "name" : "integration.request.header.Authorization",
+                    "value" : "method.request.header.Authorization",
+                    "caching" : false
+                  } ],
+                  "pathRequestParameter" : [ ],
+                  "defaultTimeout" : true,
+                  "timeoutInMillis" : 50,
+                  "type" : "HTTP",
+                  "integrationType" : "HTTP",
+                  "uri" : "https://mock.apiwiz.io/V1/identity/customers/password/transaction",
+                  "cacheCredentials" : "NONE"
+                },
+                "integrationResponse" : {
+                  "200" : {
+                    "responseParameters" : [ {
+                      "name" : "method.response.header.Access-Control-Allow-Origin",
+                      "value" : "'*'",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Origin",
+                      "value" : "'*'",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Origin",
+                      "value" : "'*'",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Origin",
+                      "value" : "'*'",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Origin",
+                      "value" : "'*'",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Origin",
+                      "value" : "'*'",
+                      "caching" : false
+                    } ],
+                    "selectionPattern" : "200"
+                  }
+                },
+                "methodResponse" : {
+                  "200" : {
+                    "responseModels" : {
+                      "application/json" : {
+                        "modelId" : "fe071d07e11348f482479aa7aea88870",
+                        "modelName" : "Response"
+                      }
+                    },
+                    "responseParameters" : [ {
+                      "name" : "method.response.header.Access-Control-Allow-Origin",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Origin",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Origin",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Origin",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Origin",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Origin",
+                      "required" : false,
+                      "caching" : false
+                    } ]
+                  }
+                },
+                "path" : "POST /password/transaction"
+              },
+              "OPTIONS" : {
+                "methodRequest" : {
+                  "apiKeyRequired" : false,
+                  "authorizationType" : "NONE"
+                },
+                "integrationRequest" : {
+                  "connectionType" : "INTERNET",
+                  "queryRequestParameter" : [ ],
+                  "headerRequestParameter" : [ ],
+                  "pathRequestParameter" : [ ],
+                  "requestTemplates" : [ {
+                    "name" : "Mapping Template",
+                    "description" : "Mapping Template",
+                    "scope" : [ "METHOD" ],
+                    "type" : "Mapping Template",
+                    "policyElements" : {
+                      "application/json" : "{\"statusCode\": 200}"
+                    }
+                  } ],
+                  "defaultTimeout" : true,
+                  "timeoutInMillis" : 50,
+                  "type" : "MOCK",
+                  "cacheCredentials" : "NONE"
+                },
+                "integrationResponse" : {
+                  "200" : {
+                    "responseParameters" : [ {
+                      "name" : "method.response.header.Access-Control-Allow-Methods",
+                      "value" : "POST,OPTIONS",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Origin",
+                      "value" : "'*'",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Headers",
+                      "value" : "Content-Type,Authorization,X-Api-Key,XMLHTTPRequest,Access-Control-Allow-Origin",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Expose-Headers",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Credentials",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Max-Age",
+                      "value" : "0",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Methods",
+                      "value" : "POST,OPTIONS",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Origin",
+                      "value" : "'*'",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Headers",
+                      "value" : "Content-Type,Authorization,X-Api-Key,XMLHTTPRequest,Access-Control-Allow-Origin",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Expose-Headers",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Credentials",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Max-Age",
+                      "value" : "0",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Methods",
+                      "value" : "POST,OPTIONS",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Origin",
+                      "value" : "'*'",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Headers",
+                      "value" : "Content-Type,Authorization,X-Api-Key,XMLHTTPRequest,Access-Control-Allow-Origin",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Expose-Headers",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Credentials",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Max-Age",
+                      "value" : "0",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Methods",
+                      "value" : "POST,OPTIONS",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Origin",
+                      "value" : "'*'",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Headers",
+                      "value" : "Content-Type,Authorization,X-Api-Key,XMLHTTPRequest,Access-Control-Allow-Origin",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Expose-Headers",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Credentials",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Max-Age",
+                      "value" : "0",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Methods",
+                      "value" : "POST,OPTIONS",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Origin",
+                      "value" : "'*'",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Headers",
+                      "value" : "Content-Type,Authorization,X-Api-Key,XMLHTTPRequest,Access-Control-Allow-Origin",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Expose-Headers",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Credentials",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Max-Age",
+                      "value" : "0",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Methods",
+                      "value" : "POST,OPTIONS",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Origin",
+                      "value" : "'*'",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Headers",
+                      "value" : "Content-Type,Authorization,X-Api-Key,XMLHTTPRequest,Access-Control-Allow-Origin",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Expose-Headers",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Credentials",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Max-Age",
+                      "value" : "0",
+                      "caching" : false
+                    } ]
+                  }
+                },
+                "methodResponse" : {
+                  "200" : {
+                    "responseParameters" : [ {
+                      "name" : "method.response.header.Access-Control-Allow-Methods",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Origin",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Headers",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Expose-Headers",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Credentials",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Max-Age",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Methods",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Origin",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Headers",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Expose-Headers",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Credentials",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Max-Age",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Methods",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Origin",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Headers",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Expose-Headers",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Credentials",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Max-Age",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Methods",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Origin",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Headers",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Expose-Headers",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Credentials",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Max-Age",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Methods",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Origin",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Headers",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Expose-Headers",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Credentials",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Max-Age",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Methods",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Origin",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Headers",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Expose-Headers",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Credentials",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Max-Age",
+                      "required" : false,
+                      "caching" : false
+                    } ]
+                  }
+                },
+                "path" : "OPTIONS /password/transaction"
+              }
+            },
+            "parentId" : "fkiw12",
+            "id" : "ydu7a9",
+            "path" : "/password/transaction",
+            "resourceId" : "2dcfed06f96044fdba88a2a4fee3f88e"
+          }
+        },
+        "methods" : {
+          "POST" : {
+            "methodRequest" : {
+              "apiKeyRequired" : false,
+              "authorizationType" : "NONE",
+              "requestModels" : {
+                "application/json" : {
+                  "modelId" : "31c1c90127204122968155ea0b851893",
+                  "modelName" : "ResetUserPasswordReq"
+                }
+              },
+              "queryRequestParameter" : [ {
+                "name" : "method.request.querystring.token",
+                "required" : false,
+                "caching" : false
+              } ],
+              "headerRequestParameter" : [ {
+                "name" : "method.request.header.Content-Type",
+                "required" : false,
+                "caching" : false
+              }, {
+                "name" : "method.request.header.Accept",
+                "required" : false,
+                "caching" : false
+              }, {
+                "name" : "method.request.header.Authorization",
+                "required" : false,
+                "caching" : false
+              } ]
+            },
+            "integrationRequest" : {
+              "connectionType" : "INTERNET",
+              "httpMethod" : "POST",
+              "queryRequestParameter" : [ {
+                "name" : "integration.request.querystring.token",
+                "value" : "method.request.querystring.token",
+                "caching" : false
+              } ],
+              "headerRequestParameter" : [ {
+                "name" : "integration.request.header.Content-Type",
+                "value" : "method.request.header.Content-Type",
+                "caching" : false
+              }, {
+                "name" : "integration.request.header.Accept",
+                "value" : "method.request.header.Accept",
+                "caching" : false
+              }, {
+                "name" : "integration.request.header.Authorization",
+                "value" : "method.request.header.Authorization",
+                "caching" : false
+              } ],
+              "pathRequestParameter" : [ ],
+              "defaultTimeout" : true,
+              "timeoutInMillis" : 50,
+              "type" : "HTTP",
+              "integrationType" : "HTTP",
+              "uri" : "https://mock.apiwiz.io/V1/identity/customers/password",
+              "cacheCredentials" : "NONE"
+            },
+            "integrationResponse" : {
+              "200" : {
+                "responseParameters" : [ {
+                  "name" : "method.response.header.Access-Control-Allow-Origin",
+                  "value" : "'*'",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Origin",
+                  "value" : "'*'",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Origin",
+                  "value" : "'*'",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Origin",
+                  "value" : "'*'",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Origin",
+                  "value" : "'*'",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Origin",
+                  "value" : "'*'",
+                  "caching" : false
+                } ],
+                "selectionPattern" : "200"
+              }
+            },
+            "methodResponse" : {
+              "200" : {
+                "responseModels" : {
+                  "application/json" : {
+                    "modelId" : "fe071d07e11348f482479aa7aea88870",
+                    "modelName" : "Response"
+                  }
+                },
+                "responseParameters" : [ {
+                  "name" : "method.response.header.Access-Control-Allow-Origin",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Origin",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Origin",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Origin",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Origin",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Origin",
+                  "required" : false,
+                  "caching" : false
+                } ]
+              }
+            },
+            "path" : "POST /password"
+          },
+          "OPTIONS" : {
+            "methodRequest" : {
+              "apiKeyRequired" : false,
+              "authorizationType" : "NONE"
+            },
+            "integrationRequest" : {
+              "connectionType" : "INTERNET",
+              "queryRequestParameter" : [ ],
+              "headerRequestParameter" : [ ],
+              "pathRequestParameter" : [ ],
+              "requestTemplates" : [ {
+                "name" : "Mapping Template",
+                "description" : "Mapping Template",
+                "scope" : [ "METHOD" ],
+                "type" : "Mapping Template",
+                "policyElements" : {
+                  "application/json" : "{\"statusCode\": 200}"
+                }
+              } ],
+              "defaultTimeout" : true,
+              "timeoutInMillis" : 50,
+              "type" : "MOCK",
+              "cacheCredentials" : "NONE"
+            },
+            "integrationResponse" : {
+              "200" : {
+                "responseParameters" : [ {
+                  "name" : "method.response.header.Access-Control-Allow-Methods",
+                  "value" : "POST,OPTIONS",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Origin",
+                  "value" : "'*'",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Headers",
+                  "value" : "Content-Type,Authorization,X-Api-Key,XMLHTTPRequest,Access-Control-Allow-Origin",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Expose-Headers",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Credentials",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Max-Age",
+                  "value" : "0",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Methods",
+                  "value" : "POST,OPTIONS",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Origin",
+                  "value" : "'*'",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Headers",
+                  "value" : "Content-Type,Authorization,X-Api-Key,XMLHTTPRequest,Access-Control-Allow-Origin",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Expose-Headers",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Credentials",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Max-Age",
+                  "value" : "0",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Methods",
+                  "value" : "POST,OPTIONS",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Origin",
+                  "value" : "'*'",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Headers",
+                  "value" : "Content-Type,Authorization,X-Api-Key,XMLHTTPRequest,Access-Control-Allow-Origin",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Expose-Headers",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Credentials",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Max-Age",
+                  "value" : "0",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Methods",
+                  "value" : "POST,OPTIONS",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Origin",
+                  "value" : "'*'",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Headers",
+                  "value" : "Content-Type,Authorization,X-Api-Key,XMLHTTPRequest,Access-Control-Allow-Origin",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Expose-Headers",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Credentials",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Max-Age",
+                  "value" : "0",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Methods",
+                  "value" : "POST,OPTIONS",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Origin",
+                  "value" : "'*'",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Headers",
+                  "value" : "Content-Type,Authorization,X-Api-Key,XMLHTTPRequest,Access-Control-Allow-Origin",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Expose-Headers",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Credentials",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Max-Age",
+                  "value" : "0",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Methods",
+                  "value" : "POST,OPTIONS",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Origin",
+                  "value" : "'*'",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Headers",
+                  "value" : "Content-Type,Authorization,X-Api-Key,XMLHTTPRequest,Access-Control-Allow-Origin",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Expose-Headers",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Credentials",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Max-Age",
+                  "value" : "0",
+                  "caching" : false
+                } ]
+              }
+            },
+            "methodResponse" : {
+              "200" : {
+                "responseParameters" : [ {
+                  "name" : "method.response.header.Access-Control-Allow-Methods",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Origin",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Headers",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Expose-Headers",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Credentials",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Max-Age",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Methods",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Origin",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Headers",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Expose-Headers",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Credentials",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Max-Age",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Methods",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Origin",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Headers",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Expose-Headers",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Credentials",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Max-Age",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Methods",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Origin",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Headers",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Expose-Headers",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Credentials",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Max-Age",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Methods",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Origin",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Headers",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Expose-Headers",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Credentials",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Max-Age",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Methods",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Origin",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Headers",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Expose-Headers",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Credentials",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Max-Age",
+                  "required" : false,
+                  "caching" : false
+                } ]
+              }
+            },
+            "path" : "OPTIONS /password"
+          }
+        },
+        "parentId" : "6ssr8t4al8",
+        "id" : "fkiw12",
+        "path" : "/password",
+        "resourceId" : "e4b8987d0e8345838a71af928fd08745"
+      },
+      "/{id}" : {
+        "cors" : {
+          "name" : "Cors Policy",
+          "description" : "Cors Policy",
+          "scope" : [ "METHOD" ],
+          "type" : "Cors Policy",
+          "enforce" : false,
+          "policyElements" : {
+            "accessControlAllowHeader" : "Content-Type,Authorization,X-Api-Key,XMLHTTPRequest,Access-Control-Allow-Origin",
+            "accessControlAllowOrigin" : "'*'",
+            "accessControlMaxAge" : 0,
+            "methods" : [ "GET" ]
+          }
+        },
+        "operation" : "UPDATE",
+        "name" : "/{id}",
+        "childResources" : {
+          "/roles" : {
+            "name" : "/roles",
+            "childResources" : {
+              "/{roleId}" : {
+                "cors" : {
+                  "name" : "Cors Policy",
+                  "description" : "Cors Policy",
+                  "scope" : [ "METHOD" ],
+                  "type" : "Cors Policy",
+                  "enforce" : false,
+                  "policyElements" : {
+                    "accessControlAllowHeader" : "Content-Type,Authorization,X-Api-Key,XMLHTTPRequest,Access-Control-Allow-Origin",
+                    "accessControlAllowOrigin" : "'*'",
+                    "accessControlMaxAge" : 0,
+                    "methods" : [ "DELETE", "POST" ]
+                  }
+                },
+                "operation" : "UPDATE",
+                "name" : "/{roleId}",
+                "childResources" : { },
+                "methods" : {
+                  "DELETE" : {
+                    "methodRequest" : {
+                      "apiKeyRequired" : false,
+                      "authorizationType" : "NONE",
+                      "headerRequestParameter" : [ {
+                        "name" : "method.request.header.Accept",
+                        "required" : false,
+                        "caching" : false
+                      }, {
+                        "name" : "method.request.header.Authorization",
+                        "required" : false,
+                        "caching" : false
+                      } ]
+                    },
+                    "integrationRequest" : {
+                      "connectionType" : "INTERNET",
+                      "httpMethod" : "DELETE",
+                      "queryRequestParameter" : [ ],
+                      "headerRequestParameter" : [ {
+                        "name" : "integration.request.header.Accept",
+                        "value" : "method.request.header.Accept",
+                        "caching" : false
+                      }, {
+                        "name" : "integration.request.header.Authorization",
+                        "value" : "method.request.header.Authorization",
+                        "caching" : false
+                      } ],
+                      "pathRequestParameter" : [ ],
+                      "defaultTimeout" : true,
+                      "timeoutInMillis" : 50,
+                      "type" : "HTTP",
+                      "integrationType" : "HTTP",
+                      "uri" : "https://mock.apiwiz.io/V1/identity/customers/{id}/roles/{roleId}",
+                      "cacheCredentials" : "NONE"
+                    },
+                    "integrationResponse" : {
+                      "200" : {
+                        "responseParameters" : [ {
+                          "name" : "method.response.header.Access-Control-Allow-Origin",
+                          "value" : "'*'",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Origin",
+                          "value" : "'*'",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Origin",
+                          "value" : "'*'",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Origin",
+                          "value" : "'*'",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Origin",
+                          "value" : "'*'",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Origin",
+                          "value" : "'*'",
+                          "caching" : false
+                        } ],
+                        "selectionPattern" : "200"
+                      }
+                    },
+                    "methodResponse" : {
+                      "200" : {
+                        "responseModels" : {
+                          "application/json" : {
+                            "modelId" : "fe071d07e11348f482479aa7aea88870",
+                            "modelName" : "Response"
+                          }
+                        },
+                        "responseParameters" : [ {
+                          "name" : "method.response.header.Access-Control-Allow-Origin",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Origin",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Origin",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Origin",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Origin",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Origin",
+                          "required" : false,
+                          "caching" : false
+                        } ]
+                      }
+                    },
+                    "path" : "DELETE /{id}/roles/{roleId}"
+                  },
+                  "POST" : {
+                    "methodRequest" : {
+                      "apiKeyRequired" : false,
+                      "authorizationType" : "NONE",
+                      "headerRequestParameter" : [ {
+                        "name" : "method.request.header.Accept",
+                        "required" : false,
+                        "caching" : false
+                      }, {
+                        "name" : "method.request.header.Authorization",
+                        "required" : false,
+                        "caching" : false
+                      } ]
+                    },
+                    "integrationRequest" : {
+                      "connectionType" : "INTERNET",
+                      "httpMethod" : "POST",
+                      "queryRequestParameter" : [ ],
+                      "headerRequestParameter" : [ {
+                        "name" : "integration.request.header.Accept",
+                        "value" : "method.request.header.Accept",
+                        "caching" : false
+                      }, {
+                        "name" : "integration.request.header.Authorization",
+                        "value" : "method.request.header.Authorization",
+                        "caching" : false
+                      } ],
+                      "pathRequestParameter" : [ ],
+                      "defaultTimeout" : true,
+                      "timeoutInMillis" : 50,
+                      "type" : "HTTP",
+                      "integrationType" : "HTTP",
+                      "uri" : "https://mock.apiwiz.io/V1/identity/customers/{id}/roles/{roleId}",
+                      "cacheCredentials" : "NONE"
+                    },
+                    "integrationResponse" : {
+                      "200" : {
+                        "responseParameters" : [ {
+                          "name" : "method.response.header.Access-Control-Allow-Origin",
+                          "value" : "'*'",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Origin",
+                          "value" : "'*'",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Origin",
+                          "value" : "'*'",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Origin",
+                          "value" : "'*'",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Origin",
+                          "value" : "'*'",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Origin",
+                          "value" : "'*'",
+                          "caching" : false
+                        } ],
+                        "selectionPattern" : "200"
+                      }
+                    },
+                    "methodResponse" : {
+                      "200" : {
+                        "responseModels" : {
+                          "application/json" : {
+                            "modelId" : "fe071d07e11348f482479aa7aea88870",
+                            "modelName" : "Response"
+                          }
+                        },
+                        "responseParameters" : [ {
+                          "name" : "method.response.header.Access-Control-Allow-Origin",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Origin",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Origin",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Origin",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Origin",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Origin",
+                          "required" : false,
+                          "caching" : false
+                        } ]
+                      }
+                    },
+                    "path" : "POST /{id}/roles/{roleId}"
+                  },
+                  "OPTIONS" : {
+                    "methodRequest" : {
+                      "apiKeyRequired" : false,
+                      "authorizationType" : "NONE"
+                    },
+                    "integrationRequest" : {
+                      "connectionType" : "INTERNET",
+                      "queryRequestParameter" : [ ],
+                      "headerRequestParameter" : [ ],
+                      "pathRequestParameter" : [ ],
+                      "requestTemplates" : [ {
+                        "name" : "Mapping Template",
+                        "description" : "Mapping Template",
+                        "scope" : [ "METHOD" ],
+                        "type" : "Mapping Template",
+                        "policyElements" : {
+                          "application/json" : "{\"statusCode\": 200}"
+                        }
+                      } ],
+                      "defaultTimeout" : true,
+                      "timeoutInMillis" : 50,
+                      "type" : "MOCK",
+                      "cacheCredentials" : "NONE"
+                    },
+                    "integrationResponse" : {
+                      "200" : {
+                        "responseParameters" : [ {
+                          "name" : "method.response.header.Access-Control-Allow-Methods",
+                          "value" : "DELETE,POST,OPTIONS",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Origin",
+                          "value" : "'*'",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Headers",
+                          "value" : "Content-Type,Authorization,X-Api-Key,XMLHTTPRequest,Access-Control-Allow-Origin",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Expose-Headers",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Credentials",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Max-Age",
+                          "value" : "0",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Methods",
+                          "value" : "DELETE,POST,OPTIONS",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Origin",
+                          "value" : "'*'",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Headers",
+                          "value" : "Content-Type,Authorization,X-Api-Key,XMLHTTPRequest,Access-Control-Allow-Origin",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Expose-Headers",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Credentials",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Max-Age",
+                          "value" : "0",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Methods",
+                          "value" : "DELETE,POST,OPTIONS",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Origin",
+                          "value" : "'*'",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Headers",
+                          "value" : "Content-Type,Authorization,X-Api-Key,XMLHTTPRequest,Access-Control-Allow-Origin",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Expose-Headers",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Credentials",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Max-Age",
+                          "value" : "0",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Methods",
+                          "value" : "DELETE,POST,OPTIONS",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Origin",
+                          "value" : "'*'",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Headers",
+                          "value" : "Content-Type,Authorization,X-Api-Key,XMLHTTPRequest,Access-Control-Allow-Origin",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Expose-Headers",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Credentials",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Max-Age",
+                          "value" : "0",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Methods",
+                          "value" : "DELETE,POST,OPTIONS",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Origin",
+                          "value" : "'*'",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Headers",
+                          "value" : "Content-Type,Authorization,X-Api-Key,XMLHTTPRequest,Access-Control-Allow-Origin",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Expose-Headers",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Credentials",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Max-Age",
+                          "value" : "0",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Methods",
+                          "value" : "DELETE,POST,OPTIONS",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Origin",
+                          "value" : "'*'",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Headers",
+                          "value" : "Content-Type,Authorization,X-Api-Key,XMLHTTPRequest,Access-Control-Allow-Origin",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Expose-Headers",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Credentials",
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Max-Age",
+                          "value" : "0",
+                          "caching" : false
+                        } ]
+                      }
+                    },
+                    "methodResponse" : {
+                      "200" : {
+                        "responseParameters" : [ {
+                          "name" : "method.response.header.Access-Control-Allow-Methods",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Origin",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Headers",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Expose-Headers",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Credentials",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Max-Age",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Methods",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Origin",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Headers",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Expose-Headers",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Credentials",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Max-Age",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Methods",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Origin",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Headers",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Expose-Headers",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Credentials",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Max-Age",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Methods",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Origin",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Headers",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Expose-Headers",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Credentials",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Max-Age",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Methods",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Origin",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Headers",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Expose-Headers",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Credentials",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Max-Age",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Methods",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Origin",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Headers",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Expose-Headers",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Allow-Credentials",
+                          "required" : false,
+                          "caching" : false
+                        }, {
+                          "name" : "method.response.header.Access-Control-Max-Age",
+                          "required" : false,
+                          "caching" : false
+                        } ]
+                      }
+                    },
+                    "path" : "OPTIONS /{id}/roles/{roleId}"
+                  }
+                },
+                "parentId" : "zejahl",
+                "id" : "k68ymh",
+                "path" : "/{id}/roles/{roleId}",
+                "resourceId" : "9830771cc42b461a957d619022998a93"
+              }
+            },
+            "methods" : { },
+            "parentId" : "084uul",
+            "id" : "zejahl",
+            "path" : "/{id}/roles",
+            "resourceId" : "1ab9bb5a31904106ab3e7d291995050d"
+          },
+          "/active" : {
+            "cors" : {
+              "name" : "Cors Policy",
+              "description" : "Cors Policy",
+              "scope" : [ "METHOD" ],
+              "type" : "Cors Policy",
+              "enforce" : false,
+              "policyElements" : {
+                "accessControlAllowHeader" : "Content-Type,Authorization,X-Api-Key,XMLHTTPRequest,Access-Control-Allow-Origin",
+                "accessControlAllowOrigin" : "'*'",
+                "accessControlMaxAge" : 0,
+                "methods" : [ "POST" ]
+              }
+            },
+            "operation" : "UPDATE",
+            "name" : "/active",
+            "childResources" : { },
+            "methods" : {
+              "POST" : {
+                "methodRequest" : {
+                  "apiKeyRequired" : false,
+                  "authorizationType" : "NONE",
+                  "headerRequestParameter" : [ {
+                    "name" : "method.request.header.Accept",
+                    "required" : false,
+                    "caching" : false
+                  }, {
+                    "name" : "method.request.header.Authorization",
+                    "required" : false,
+                    "caching" : false
+                  } ]
+                },
+                "integrationRequest" : {
+                  "connectionType" : "INTERNET",
+                  "httpMethod" : "POST",
+                  "queryRequestParameter" : [ ],
+                  "headerRequestParameter" : [ {
+                    "name" : "integration.request.header.Accept",
+                    "value" : "method.request.header.Accept",
+                    "caching" : false
+                  }, {
+                    "name" : "integration.request.header.Authorization",
+                    "value" : "method.request.header.Authorization",
+                    "caching" : false
+                  } ],
+                  "pathRequestParameter" : [ ],
+                  "defaultTimeout" : true,
+                  "timeoutInMillis" : 50,
+                  "type" : "HTTP",
+                  "integrationType" : "HTTP",
+                  "uri" : "https://mock.apiwiz.io/V1/identity/customers/{id}/active",
+                  "cacheCredentials" : "NONE"
+                },
+                "integrationResponse" : {
+                  "200" : {
+                    "responseParameters" : [ {
+                      "name" : "method.response.header.Access-Control-Allow-Origin",
+                      "value" : "'*'",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Origin",
+                      "value" : "'*'",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Origin",
+                      "value" : "'*'",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Origin",
+                      "value" : "'*'",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Origin",
+                      "value" : "'*'",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Origin",
+                      "value" : "'*'",
+                      "caching" : false
+                    } ],
+                    "selectionPattern" : "200"
+                  }
+                },
+                "methodResponse" : {
+                  "200" : {
+                    "responseModels" : {
+                      "application/json" : {
+                        "modelId" : "fe071d07e11348f482479aa7aea88870",
+                        "modelName" : "Response"
+                      }
+                    },
+                    "responseParameters" : [ {
+                      "name" : "method.response.header.Access-Control-Allow-Origin",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Origin",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Origin",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Origin",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Origin",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Origin",
+                      "required" : false,
+                      "caching" : false
+                    } ]
+                  }
+                },
+                "path" : "POST /{id}/active"
+              },
+              "OPTIONS" : {
+                "methodRequest" : {
+                  "apiKeyRequired" : false,
+                  "authorizationType" : "NONE"
+                },
+                "integrationRequest" : {
+                  "connectionType" : "INTERNET",
+                  "queryRequestParameter" : [ ],
+                  "headerRequestParameter" : [ ],
+                  "pathRequestParameter" : [ ],
+                  "requestTemplates" : [ {
+                    "name" : "Mapping Template",
+                    "description" : "Mapping Template",
+                    "scope" : [ "METHOD" ],
+                    "type" : "Mapping Template",
+                    "policyElements" : {
+                      "application/json" : "{\"statusCode\": 200}"
+                    }
+                  } ],
+                  "defaultTimeout" : true,
+                  "timeoutInMillis" : 50,
+                  "type" : "MOCK",
+                  "cacheCredentials" : "NONE"
+                },
+                "integrationResponse" : {
+                  "200" : {
+                    "responseParameters" : [ {
+                      "name" : "method.response.header.Access-Control-Allow-Methods",
+                      "value" : "POST,OPTIONS",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Origin",
+                      "value" : "'*'",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Headers",
+                      "value" : "Content-Type,Authorization,X-Api-Key,XMLHTTPRequest,Access-Control-Allow-Origin",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Expose-Headers",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Credentials",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Max-Age",
+                      "value" : "0",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Methods",
+                      "value" : "POST,OPTIONS",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Origin",
+                      "value" : "'*'",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Headers",
+                      "value" : "Content-Type,Authorization,X-Api-Key,XMLHTTPRequest,Access-Control-Allow-Origin",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Expose-Headers",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Credentials",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Max-Age",
+                      "value" : "0",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Methods",
+                      "value" : "POST,OPTIONS",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Origin",
+                      "value" : "'*'",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Headers",
+                      "value" : "Content-Type,Authorization,X-Api-Key,XMLHTTPRequest,Access-Control-Allow-Origin",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Expose-Headers",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Credentials",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Max-Age",
+                      "value" : "0",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Methods",
+                      "value" : "POST,OPTIONS",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Origin",
+                      "value" : "'*'",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Headers",
+                      "value" : "Content-Type,Authorization,X-Api-Key,XMLHTTPRequest,Access-Control-Allow-Origin",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Expose-Headers",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Credentials",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Max-Age",
+                      "value" : "0",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Methods",
+                      "value" : "POST,OPTIONS",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Origin",
+                      "value" : "'*'",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Headers",
+                      "value" : "Content-Type,Authorization,X-Api-Key,XMLHTTPRequest,Access-Control-Allow-Origin",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Expose-Headers",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Credentials",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Max-Age",
+                      "value" : "0",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Methods",
+                      "value" : "POST,OPTIONS",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Origin",
+                      "value" : "'*'",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Headers",
+                      "value" : "Content-Type,Authorization,X-Api-Key,XMLHTTPRequest,Access-Control-Allow-Origin",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Expose-Headers",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Credentials",
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Max-Age",
+                      "value" : "0",
+                      "caching" : false
+                    } ]
+                  }
+                },
+                "methodResponse" : {
+                  "200" : {
+                    "responseParameters" : [ {
+                      "name" : "method.response.header.Access-Control-Allow-Methods",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Origin",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Headers",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Expose-Headers",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Credentials",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Max-Age",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Methods",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Origin",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Headers",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Expose-Headers",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Credentials",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Max-Age",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Methods",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Origin",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Headers",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Expose-Headers",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Credentials",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Max-Age",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Methods",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Origin",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Headers",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Expose-Headers",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Credentials",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Max-Age",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Methods",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Origin",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Headers",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Expose-Headers",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Credentials",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Max-Age",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Methods",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Origin",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Headers",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Expose-Headers",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Allow-Credentials",
+                      "required" : false,
+                      "caching" : false
+                    }, {
+                      "name" : "method.response.header.Access-Control-Max-Age",
+                      "required" : false,
+                      "caching" : false
+                    } ]
+                  }
+                },
+                "path" : "OPTIONS /{id}/active"
+              }
+            },
+            "parentId" : "084uul",
+            "id" : "dfze2v",
+            "path" : "/{id}/active",
+            "resourceId" : "73d5071aa2854c2ca23d2db9abae1a70"
+          }
+        },
+        "methods" : {
+          "GET" : {
+            "methodRequest" : {
+              "apiKeyRequired" : false,
+              "authorizationType" : "NONE",
+              "headerRequestParameter" : [ {
+                "name" : "method.request.header.Accept",
+                "required" : false,
+                "caching" : false
+              }, {
+                "name" : "method.request.header.Authorization",
+                "required" : false,
+                "caching" : false
+              } ]
+            },
+            "integrationRequest" : {
+              "connectionType" : "INTERNET",
+              "httpMethod" : "GET",
+              "queryRequestParameter" : [ ],
+              "headerRequestParameter" : [ {
+                "name" : "integration.request.header.Accept",
+                "value" : "method.request.header.Accept",
+                "caching" : false
+              }, {
+                "name" : "integration.request.header.Authorization",
+                "value" : "method.request.header.Authorization",
+                "caching" : false
+              } ],
+              "pathRequestParameter" : [ ],
+              "defaultTimeout" : true,
+              "timeoutInMillis" : 50,
+              "type" : "HTTP",
+              "integrationType" : "HTTP",
+              "uri" : "https://mock.apiwiz.io/V1/identity/customers/{id}",
+              "cacheCredentials" : "NONE"
+            },
+            "integrationResponse" : {
+              "200" : {
+                "responseParameters" : [ {
+                  "name" : "method.response.header.Access-Control-Allow-Origin",
+                  "value" : "'*'",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Origin",
+                  "value" : "'*'",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Origin",
+                  "value" : "'*'",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Origin",
+                  "value" : "'*'",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Origin",
+                  "value" : "'*'",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Origin",
+                  "value" : "'*'",
+                  "caching" : false
+                } ],
+                "selectionPattern" : "200"
+              }
+            },
+            "methodResponse" : {
+              "200" : {
+                "responseModels" : {
+                  "application/json" : {
+                    "modelId" : "fe071d07e11348f482479aa7aea88870",
+                    "modelName" : "Response"
+                  }
+                },
+                "responseParameters" : [ {
+                  "name" : "method.response.header.Access-Control-Allow-Origin",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Origin",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Origin",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Origin",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Origin",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Origin",
+                  "required" : false,
+                  "caching" : false
+                } ]
+              }
+            },
+            "path" : "GET /{id}"
+          },
+          "OPTIONS" : {
+            "methodRequest" : {
+              "apiKeyRequired" : false,
+              "authorizationType" : "NONE"
+            },
+            "integrationRequest" : {
+              "connectionType" : "INTERNET",
+              "queryRequestParameter" : [ ],
+              "headerRequestParameter" : [ ],
+              "pathRequestParameter" : [ ],
+              "requestTemplates" : [ {
+                "name" : "Mapping Template",
+                "description" : "Mapping Template",
+                "scope" : [ "METHOD" ],
+                "type" : "Mapping Template",
+                "policyElements" : {
+                  "application/json" : "{\"statusCode\": 200}"
+                }
+              } ],
+              "defaultTimeout" : true,
+              "timeoutInMillis" : 50,
+              "type" : "MOCK",
+              "cacheCredentials" : "NONE"
+            },
+            "integrationResponse" : {
+              "200" : {
+                "responseParameters" : [ {
+                  "name" : "method.response.header.Access-Control-Allow-Methods",
+                  "value" : "GET,OPTIONS",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Origin",
+                  "value" : "'*'",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Headers",
+                  "value" : "Content-Type,Authorization,X-Api-Key,XMLHTTPRequest,Access-Control-Allow-Origin",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Expose-Headers",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Credentials",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Max-Age",
+                  "value" : "0",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Methods",
+                  "value" : "GET,OPTIONS",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Origin",
+                  "value" : "'*'",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Headers",
+                  "value" : "Content-Type,Authorization,X-Api-Key,XMLHTTPRequest,Access-Control-Allow-Origin",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Expose-Headers",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Credentials",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Max-Age",
+                  "value" : "0",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Methods",
+                  "value" : "GET,OPTIONS",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Origin",
+                  "value" : "'*'",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Headers",
+                  "value" : "Content-Type,Authorization,X-Api-Key,XMLHTTPRequest,Access-Control-Allow-Origin",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Expose-Headers",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Credentials",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Max-Age",
+                  "value" : "0",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Methods",
+                  "value" : "GET,OPTIONS",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Origin",
+                  "value" : "'*'",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Headers",
+                  "value" : "Content-Type,Authorization,X-Api-Key,XMLHTTPRequest,Access-Control-Allow-Origin",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Expose-Headers",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Credentials",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Max-Age",
+                  "value" : "0",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Methods",
+                  "value" : "GET,OPTIONS",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Origin",
+                  "value" : "'*'",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Headers",
+                  "value" : "Content-Type,Authorization,X-Api-Key,XMLHTTPRequest,Access-Control-Allow-Origin",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Expose-Headers",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Credentials",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Max-Age",
+                  "value" : "0",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Methods",
+                  "value" : "GET,OPTIONS",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Origin",
+                  "value" : "'*'",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Headers",
+                  "value" : "Content-Type,Authorization,X-Api-Key,XMLHTTPRequest,Access-Control-Allow-Origin",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Expose-Headers",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Credentials",
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Max-Age",
+                  "value" : "0",
+                  "caching" : false
+                } ]
+              }
+            },
+            "methodResponse" : {
+              "200" : {
+                "responseParameters" : [ {
+                  "name" : "method.response.header.Access-Control-Allow-Methods",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Origin",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Headers",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Expose-Headers",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Credentials",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Max-Age",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Methods",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Origin",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Headers",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Expose-Headers",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Credentials",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Max-Age",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Methods",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Origin",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Headers",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Expose-Headers",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Credentials",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Max-Age",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Methods",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Origin",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Headers",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Expose-Headers",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Credentials",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Max-Age",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Methods",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Origin",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Headers",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Expose-Headers",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Credentials",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Max-Age",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Methods",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Origin",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Headers",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Expose-Headers",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Allow-Credentials",
+                  "required" : false,
+                  "caching" : false
+                }, {
+                  "name" : "method.response.header.Access-Control-Max-Age",
+                  "required" : false,
+                  "caching" : false
+                } ]
+              }
+            },
+            "path" : "OPTIONS /{id}"
+          }
+        },
+        "parentId" : "6ssr8t4al8",
+        "id" : "084uul",
+        "path" : "/{id}",
+        "resourceId" : "4815f6d9042c4360a865a5e1fbd474d3"
+      }
+    },
+    "methods" : { },
+    "parentId" : "6ssr8t4al8",
+    "id" : "6ssr8t4al8"
+  } ],
+  "httpIntegration" : [ ],
+  "models" : [ {
+    "name" : "Response",
+    "description" : "",
+    "modelId" : "fe071d07e11348f482479aa7aea88870",
+    "contentType" : "application/json",
+    "schema" : "{\"type\":\"object\",\"properties\":{\"0\":{\"type\":\"object\",\"properties\":{\"price\":{\"type\":\"number\"},\"warehouseLocation\":{\"type\":\"object\",\"properties\":{\"latitude\":{\"type\":\"number\"},\"longitude\":{\"type\":\"number\"}}},\"name\":{\"type\":\"string\"},\"id\":{\"type\":\"number\"},\"tags\":{\"type\":\"array\",\"items\":{\"type\":\"string\"}},\"dimensions\":{\"type\":\"object\",\"properties\":{\"length\":{\"type\":\"number\"},\"width\":{\"type\":\"number\"},\"height\":{\"type\":\"number\"}}}}},\"1\":{\"type\":\"object\",\"properties\":{\"price\":{\"type\":\"number\"},\"warehouseLocation\":{\"type\":\"object\",\"properties\":{\"latitude\":{\"type\":\"number\"},\"longitude\":{\"type\":\"number\"}}},\"name\":{\"type\":\"string\"},\"id\":{\"type\":\"number\"},\"dimensions\":{\"type\":\"object\",\"properties\":{\"length\":{\"type\":\"number\"},\"width\":{\"type\":\"number\"},\"height\":{\"type\":\"number\"}}}}}}}",
+    "awsModelId" : "q912mt"
+  }, {
+    "name" : "SelectedEmployeeReq",
+    "description" : "",
+    "modelId" : "5dff0fb4f6dd4e55870aad568272a907",
+    "contentType" : "application/json",
+    "schema" : "{\"type\":\"object\",\"properties\":{\"password\":{\"type\":\"string\"},\"oldPassword\":{\"type\":\"string\"},\"confirmPassword\":{\"type\":\"string\"},\"newPassword\":{\"type\":\"string\"},\"type\":{\"type\":\"string\"},\"confirmed\":{\"type\":\"boolean\"},\"username\":{\"type\":\"string\"}}}",
+    "awsModelId" : "88qfcg"
+  }, {
+    "name" : "ResetPasswordReq",
+    "description" : "",
+    "modelId" : "ce75ec245ac445f8834a6ca2773fcf0e",
+    "contentType" : "application/json",
+    "schema" : "{\"type\":\"object\",\"properties\":{\"password\":{\"type\":\"string\"},\"oldPassword\":{\"type\":\"string\"},\"confirmPassword\":{\"type\":\"string\"},\"newPassword\":{\"type\":\"string\"},\"type\":{\"type\":\"string\"},\"confirmed\":{\"type\":\"boolean\"},\"username\":{\"type\":\"string\"}}}",
+    "awsModelId" : "x7kncd"
+  }, {
+    "name" : "TransactionPasswordReq",
+    "description" : "",
+    "modelId" : "9856964d4fc34015999d49b49be6bd3c",
+    "contentType" : "application/json",
+    "schema" : "{\"type\":\"object\",\"properties\":{\"password\":{\"type\":\"string\"},\"oldPassword\":{\"type\":\"string\"},\"confirmPassword\":{\"type\":\"string\"},\"newPassword\":{\"type\":\"string\"},\"type\":{\"type\":\"string\"},\"confirmed\":{\"type\":\"boolean\"},\"username\":{\"type\":\"string\"}}}",
+    "awsModelId" : "qgib3j"
+  }, {
+    "name" : "UpdateUserInfoReq",
+    "description" : "",
+    "modelId" : "d5931c7cc01e41e08001e7ca18af74c4",
+    "contentType" : "application/json",
+    "schema" : "{\"type\":\"object\",\"properties\":{\"address\":{\"type\":\"string\"},\"roles\":{\"type\":\"array\",\"items\":{\"type\":\"number\"}},\"name\":{\"type\":\"string\"},\"claims\":{\"type\":\"object\"},\"description\":{\"type\":\"string\"},\"id\":{\"type\":\"string\"},\"type\":{\"type\":\"string\"},\"status\":{\"type\":\"number\"}}}",
+    "awsModelId" : "wk3iww"
+  }, {
+    "name" : "ResetUserPasswordReq",
+    "description" : "",
+    "modelId" : "31c1c90127204122968155ea0b851893",
+    "contentType" : "application/json",
+    "schema" : "{\"type\":\"object\",\"properties\":{\"password\":{\"type\":\"string\"},\"oldPassword\":{\"type\":\"string\"},\"confirmPassword\":{\"type\":\"string\"},\"newPassword\":{\"type\":\"string\"},\"type\":{\"type\":\"string\"},\"confirmed\":{\"type\":\"boolean\"},\"username\":{\"type\":\"string\"}}}",
+    "awsModelId" : "1hutpy"
+  }, {
+    "name" : "NewUserReq",
+    "description" : "",
+    "modelId" : "69d272c94efd469083ff9b2c2d0a5506",
+    "contentType" : "application/json",
+    "schema" : "{\"type\":\"object\",\"properties\":{\"address\":{\"type\":\"string\"},\"roles\":{\"type\":\"array\",\"items\":{\"type\":\"number\"}},\"name\":{\"type\":\"string\"},\"claims\":{\"type\":\"object\"},\"description\":{\"type\":\"string\"},\"id\":{\"type\":\"string\"},\"type\":{\"type\":\"string\"},\"status\":{\"type\":\"number\"}}}",
+    "awsModelId" : "cac9jk"
+  }, {
+    "name" : "OrganizationAccountReq",
+    "description" : "",
+    "modelId" : "ed87e3bf47644a5985d4b83f52d08d5a",
+    "contentType" : "application/json",
+    "schema" : "{\"type\":\"object\",\"properties\":{\"address\":{\"type\":\"string\"},\"roles\":{\"type\":\"array\",\"items\":{\"type\":\"number\"}},\"name\":{\"type\":\"string\"},\"claims\":{\"type\":\"object\"},\"description\":{\"type\":\"string\"},\"id\":{\"type\":\"string\"},\"type\":{\"type\":\"string\"},\"status\":{\"type\":\"number\"}}}",
+    "awsModelId" : "qve36w"
+  }, {
+    "name" : "ResetUserReq",
+    "description" : "",
+    "modelId" : "5bcb8a4db02745358bd29ce697c9e2df",
+    "contentType" : "application/json",
+    "schema" : "{\"type\":\"object\",\"properties\":{\"password\":{\"type\":\"string\"},\"oldPassword\":{\"type\":\"string\"},\"confirmPassword\":{\"type\":\"string\"},\"newPassword\":{\"type\":\"string\"},\"type\":{\"type\":\"string\"},\"confirmed\":{\"type\":\"boolean\"},\"username\":{\"type\":\"string\"}}}",
+    "awsModelId" : "gr8vi0"
+  }, {
+    "name" : "LegalReq",
+    "description" : "",
+    "modelId" : "cd03d2f31d164f3f851b3848da93fb26",
+    "contentType" : "application/json",
+    "schema" : "{\"type\":\"object\",\"properties\":{\"address\":{\"type\":\"string\"},\"roles\":{\"type\":\"array\",\"items\":{\"type\":\"number\"}},\"name\":{\"type\":\"string\"},\"claims\":{\"type\":\"object\"},\"description\":{\"type\":\"string\"},\"id\":{\"type\":\"string\"},\"type\":{\"type\":\"string\"},\"status\":{\"type\":\"number\"}}}",
+    "awsModelId" : "1g1a6k"
+  }, {
+    "name" : "LoginPasswordReq",
+    "description" : "",
+    "modelId" : "2a5a39ae6cad444b994caedc9344c379",
+    "contentType" : "application/json",
+    "schema" : "{\"type\":\"object\",\"properties\":{\"password\":{\"type\":\"string\"},\"oldPassword\":{\"type\":\"string\"},\"confirmPassword\":{\"type\":\"string\"},\"newPassword\":{\"type\":\"string\"},\"type\":{\"type\":\"string\"},\"confirmed\":{\"type\":\"boolean\"},\"username\":{\"type\":\"string\"}}}",
+    "awsModelId" : "vjy8fj"
+  } ],
+  "connectorName" : "",
+  "connectorId" : "64dca1c078baf824af66c320",
+  "apiId" : "wxct4sumcj",
+  "authorizers" : [ ],
+  "gatewayResponse" : [ {
+    "responseParameters" : [ ],
+    "responseTemplates" : {
+      "application/json" : "{\"message\":$context.error.messageString}"
+    },
+    "statusCode" : "504",
+    "responseType" : "INTEGRATION_FAILURE",
+    "defaultResponse" : true
+  }, {
+    "responseParameters" : [ ],
+    "responseTemplates" : {
+      "application/json" : "{\"message\":$context.error.messageString}"
+    },
+    "statusCode" : "404",
+    "responseType" : "RESOURCE_NOT_FOUND",
+    "defaultResponse" : true
+  }, {
+    "responseParameters" : [ ],
+    "responseTemplates" : {
+      "application/json" : "{\"message\":$context.error.messageString}"
+    },
+    "statusCode" : "413",
+    "responseType" : "REQUEST_TOO_LARGE",
+    "defaultResponse" : true
+  }, {
+    "responseParameters" : [ ],
+    "responseTemplates" : {
+      "application/json" : "{\"message\":$context.error.messageString}"
+    },
+    "statusCode" : "429",
+    "responseType" : "THROTTLED",
+    "defaultResponse" : true
+  }, {
+    "responseParameters" : [ ],
+    "responseTemplates" : {
+      "application/json" : "{\"message\":$context.error.messageString}"
+    },
+    "statusCode" : "415",
+    "responseType" : "UNSUPPORTED_MEDIA_TYPE",
+    "defaultResponse" : true
+  }, {
+    "responseParameters" : [ ],
+    "responseTemplates" : {
+      "application/json" : "{\"message\":$context.error.messageString}"
+    },
+    "statusCode" : "500",
+    "responseType" : "AUTHORIZER_CONFIGURATION_ERROR",
+    "defaultResponse" : true
+  }, {
+    "responseParameters" : [ ],
+    "responseTemplates" : {
+      "application/json" : "{\"message\":$context.error.messageString}"
+    },
+    "responseType" : "DEFAULT_5XX",
+    "defaultResponse" : true
+  }, {
+    "responseParameters" : [ ],
+    "responseTemplates" : {
+      "application/json" : "{\"message\":$context.error.messageString}"
+    },
+    "responseType" : "DEFAULT_4XX",
+    "defaultResponse" : true
+  }, {
+    "responseParameters" : [ ],
+    "responseTemplates" : {
+      "application/json" : "{\"message\":$context.error.messageString}"
+    },
+    "statusCode" : "400",
+    "responseType" : "BAD_REQUEST_PARAMETERS",
+    "defaultResponse" : true
+  }, {
+    "responseParameters" : [ ],
+    "responseTemplates" : {
+      "application/json" : "{\"message\":$context.error.messageString}"
+    },
+    "statusCode" : "400",
+    "responseType" : "BAD_REQUEST_BODY",
+    "defaultResponse" : true
+  }, {
+    "responseParameters" : [ ],
+    "responseTemplates" : {
+      "application/json" : "{\"message\":$context.error.messageString}"
+    },
+    "statusCode" : "403",
+    "responseType" : "WAF_FILTERED",
+    "defaultResponse" : true
+  }, {
+    "responseParameters" : [ ],
+    "responseTemplates" : {
+      "application/json" : "{\"message\":$context.error.messageString}"
+    },
+    "statusCode" : "403",
+    "responseType" : "EXPIRED_TOKEN",
+    "defaultResponse" : true
+  }, {
+    "responseParameters" : [ ],
+    "responseTemplates" : {
+      "application/json" : "{\"message\":$context.error.messageString}"
+    },
+    "statusCode" : "403",
+    "responseType" : "ACCESS_DENIED",
+    "defaultResponse" : true
+  }, {
+    "responseParameters" : [ ],
+    "responseTemplates" : {
+      "application/json" : "{\"message\":$context.error.messageString}"
+    },
+    "statusCode" : "403",
+    "responseType" : "INVALID_API_KEY",
+    "defaultResponse" : true
+  }, {
+    "responseParameters" : [ ],
+    "responseTemplates" : {
+      "application/json" : "{\"message\":$context.error.messageString}"
+    },
+    "statusCode" : "401",
+    "responseType" : "UNAUTHORIZED",
+    "defaultResponse" : true
+  }, {
+    "responseParameters" : [ ],
+    "responseTemplates" : {
+      "application/json" : "{\"message\":$context.error.messageString}"
+    },
+    "statusCode" : "500",
+    "responseType" : "API_CONFIGURATION_ERROR",
+    "defaultResponse" : true
+  }, {
+    "responseParameters" : [ ],
+    "responseTemplates" : {
+      "application/json" : "{\"message\":$context.error.messageString}"
+    },
+    "statusCode" : "429",
+    "responseType" : "QUOTA_EXCEEDED",
+    "defaultResponse" : true
+  }, {
+    "responseParameters" : [ ],
+    "responseTemplates" : {
+      "application/json" : "{\"message\":$context.error.messageString}"
+    },
+    "statusCode" : "504",
+    "responseType" : "INTEGRATION_TIMEOUT",
+    "defaultResponse" : true
+  }, {
+    "responseParameters" : [ ],
+    "responseTemplates" : {
+      "application/json" : "{\"message\":$context.error.messageString}"
+    },
+    "statusCode" : "403",
+    "responseType" : "MISSING_AUTHENTICATION_TOKEN",
+    "defaultResponse" : true
+  }, {
+    "responseParameters" : [ ],
+    "responseTemplates" : {
+      "application/json" : "{\"message\":$context.error.messageString}"
+    },
+    "statusCode" : "403",
+    "responseType" : "INVALID_SIGNATURE",
+    "defaultResponse" : true
+  }, {
+    "responseParameters" : [ ],
+    "responseTemplates" : {
+      "application/json" : "{\"message\":$context.error.messageString}"
+    },
+    "statusCode" : "500",
+    "responseType" : "AUTHORIZER_FAILURE",
+    "defaultResponse" : true
+  } ],
+  "requestValidators" : [ {
+    "name" : "Validate body",
+    "validateRequestBody" : true,
+    "validateRequestParameters" : false,
+    "id" : "i9gn1e"
+  }, {
+    "name" : "Validate query string parameters and headers",
+    "validateRequestBody" : false,
+    "validateRequestParameters" : true,
+    "id" : "cc4vx2"
+  }, {
+    "name" : "Validate body,query string parameters and headers",
+    "validateRequestBody" : true,
+    "validateRequestParameters" : true,
+    "id" : "zwrmor"
+  } ],
+  "throttleSettings" : { },
+  "stage" : {
+    "id" : "64fec672ee8e9922c4337ef4",
+    "cacheClusterEnabled" : false,
+    "cacheClusterSize" : "0.5",
+    "cacheClusterStatus" : "NOT_AVAILABLE",
+    "deploymentId" : "ew2jtc",
+    "stageName" : "prod-stage",
+    "tags" : { },
+    "tracingEnabled" : false,
+    "variables" : {
+      "id" : "123"
+    },
+    "canarySetting" : { },
+    "apiId" : "64fec64dee8e9922c4337ef2",
+    "webAclName" : "web-acl",
+    "stageDescription" : "prod-stage",
+    "clientCertificateId" : "64f03ab78761151d9b0bb3c3",
+    "clientCertificateName" : "client cert",
+    "methodSettings" : {
+      "*/*" : {
+        "cacheDataEncrypted" : true,
+        "cacheTtlInSeconds" : 12,
+        "cachingEnabled" : true,
+        "dataTraceEnabled" : false,
+        "loggingLevel" : "INFO",
+        "metricsEnabled" : true,
+        "requireAuthorizationForCacheControl" : true,
+        "throttlingBurstLimit" : 5,
+        "throttlingRateLimit" : 5.0,
+        "unauthorizedCacheControlHeaderStrategy" : "SUCCEED_WITHOUT_RESPONSE_HEADER"
+      }
+    },
+    "enableAccessLogging" : false,
+    "enableThrottling" : false,
+    "accessLogFormat" : "",
+    "type" : "REST",
+    "webAclARN" : "arn:aws:wafv2:us-east-1:526057378149:regional/webacl/web-acl/801f4b73-d798-4305-8dfc-a44f5b3a05da",
+    "accessLogARN" : "",
+    "invokeURL" : "https://wxct4sumcj.execute-api.us-east-1.amazonaws.com/prod-stage"
+  },
+  "existing" : true
+}
