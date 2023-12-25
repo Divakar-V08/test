@@ -41,7 +41,7 @@
           "schema" : {
             "type" : "string"
           },
-          "example" : "6442f3c7da447846514a1a90",
+          "example" : "{{jsessionid}}",
           "style" : "simple"
         }, {
           "name" : "offset",
@@ -227,7 +227,7 @@
           "schema" : {
             "type" : "string"
           },
-          "example" : "6442f3c7da447846514a1a90"
+          "example" : "{{jsessionid}}"
         } ],
         "requestBody" : {
           "content" : {
@@ -526,7 +526,7 @@
           "schema" : {
             "type" : "string"
           },
-          "example" : "6442f3c7da447846514a1a90"
+          "example" : "{{jsessionid}}"
         } ],
         "responses" : {
           "200" : {
@@ -690,7 +690,7 @@
           "schema" : {
             "type" : "string"
           },
-          "example" : "6442f3c7da447846514a1a90"
+          "example" : "{{jsessionid}}"
         } ],
         "requestBody" : {
           "content" : {
@@ -940,7 +940,7 @@
           "schema" : {
             "type" : "string"
           },
-          "example" : "6442f3c7da447846514a1a90"
+          "example" : "{{jsessionid}}"
         }, {
           "name" : "offset",
           "in" : "query",
@@ -1240,7 +1240,7 @@
           "schema" : {
             "type" : "string"
           },
-          "example" : "6442f3c7da447846514a1a90"
+          "example" : "{{jsessionid}}"
         }, {
           "name" : "pagesize",
           "in" : "query",
@@ -1515,7 +1515,7 @@
           "schema" : {
             "type" : "string"
           },
-          "example" : "6442f3c7da447846514a1a90"
+          "example" : "{{jsessionid}}"
         }, {
           "name" : "limit",
           "in" : "query",
@@ -1754,7 +1754,7 @@
           "schema" : {
             "type" : "string"
           },
-          "example" : "6442f3c7da447846514a1a90"
+          "example" : "{{jsessionid}}"
         }, {
           "name" : "names",
           "in" : "query",
@@ -1896,7 +1896,7 @@
           "schema" : {
             "type" : "string"
           },
-          "example" : "6442f3c7da447846514a1a90"
+          "example" : "{{jsessionid}}"
         } ],
         "requestBody" : {
           "content" : {
@@ -2041,7 +2041,7 @@
           "schema" : {
             "type" : "string"
           },
-          "example" : "6442f3c7da447846514a1a90"
+          "example" : "{{jsessionid}}"
         }, {
           "name" : "pagesize",
           "in" : "query",
@@ -2219,7 +2219,7 @@
           "schema" : {
             "type" : "string"
           },
-          "example" : "6442f3c7da447846514a1a90"
+          "example" : "{{jsessionid}}"
         }, {
           "name" : "limit",
           "in" : "query",
@@ -2471,7 +2471,7 @@
           "schema" : {
             "type" : "string"
           },
-          "example" : "6442f3c7da447846514a1a90"
+          "example" : "{{jsessionid}}"
         } ],
         "responses" : {
           "200" : {
@@ -2695,7 +2695,7 @@
           "schema" : {
             "type" : "string"
           },
-          "example" : "6442f3c7da447846514a1a90"
+          "example" : "{{jsessionid}}"
         } ],
         "requestBody" : {
           "content" : {
@@ -2913,7 +2913,7 @@
           "schema" : {
             "type" : "string"
           },
-          "example" : "6442f3c7da447846514a1a90"
+          "example" : "{{jsessionid}}"
         } ],
         "responses" : {
           "200" : {
@@ -3136,7 +3136,7 @@
           "schema" : {
             "type" : "string"
           },
-          "example" : "6442f3c7da447846514a1a90"
+          "example" : "{{jsessionid}}"
         } ],
         "responses" : {
           "200" : {
@@ -3381,7 +3381,7 @@
           "schema" : {
             "type" : "string"
           },
-          "example" : "6442f3c7da447846514a1a90"
+          "example" : "{{jsessionid}}"
         } ],
         "responses" : {
           "204" : {
@@ -3486,7 +3486,7 @@
           "schema" : {
             "type" : "string"
           },
-          "example" : "6442f3c7da447846514a1a90"
+          "example" : "{{jsessionid}}"
         } ],
         "responses" : {
           "200" : {
@@ -3603,7 +3603,7 @@
           "schema" : {
             "type" : "string"
           },
-          "example" : "6442f3c7da447846514a1a90"
+          "example" : "{{jsessionid}}"
         } ],
         "responses" : {
           "200" : {
@@ -3861,7 +3861,7 @@
           "schema" : {
             "type" : "string"
           },
-          "example" : "6442f3c7da447846514a1a90"
+          "example" : "{{jsessionid}}"
         } ],
         "responses" : {
           "200" : {
@@ -4019,7 +4019,7 @@
           "schema" : {
             "type" : "string"
           },
-          "example" : "6442f3c7da447846514a1a90"
+          "example" : "{{jsessionid}}"
         } ],
         "responses" : {
           "200" : {
@@ -4165,7 +4165,7 @@
           "schema" : {
             "type" : "string"
           },
-          "example" : "6442f3c7da447846514a1a90"
+          "example" : "{{jsessionid}}"
         } ],
         "requestBody" : {
           "content" : {
@@ -4279,7 +4279,7 @@
           "schema" : {
             "type" : "string"
           },
-          "example" : "6442f3c7da447846514a1a90"
+          "example" : "{{jsessionid}}"
         } ],
         "responses" : {
           "204" : {
@@ -4386,7 +4386,7 @@
           "schema" : {
             "type" : "string"
           },
-          "example" : "6442f3c7da447846514a1a90",
+          "example" : "{{jsessionid}}",
           "style" : "simple"
         }, {
           "name" : "offset",
@@ -4542,7 +4542,7 @@
           "schema" : {
             "type" : "string"
           },
-          "example" : "6442f3c7da447846514a1a90"
+          "example" : "{{jsessionid}}"
         } ],
         "requestBody" : {
           "content" : {
@@ -4836,7 +4836,7 @@
           "schema" : {
             "type" : "string"
           },
-          "example" : "6442f3c7da447846514a1a90"
+          "example" : "{{jsessionid}}"
         } ],
         "responses" : {
           "200" : {
@@ -5093,7 +5093,7 @@
           "schema" : {
             "type" : "string"
           },
-          "example" : "6442f3c7da447846514a1a90"
+          "example" : "{{jsessionid}}"
         } ],
         "requestBody" : {
           "content" : {
@@ -5336,7 +5336,7 @@
           "schema" : {
             "type" : "string"
           },
-          "example" : "6442f3c7da447846514a1a90"
+          "example" : "{{jsessionid}}"
         } ],
         "responses" : {
           "204" : {
@@ -5450,7 +5450,7 @@
           "schema" : {
             "type" : "string"
           },
-          "example" : "6442f3c7da447846514a1a90"
+          "example" : "{{jsessionid}}"
         } ],
         "responses" : {
           "200" : {
@@ -5584,7 +5584,7 @@
           "schema" : {
             "type" : "string"
           },
-          "example" : "6442f3c7da447846514a1a90"
+          "example" : "{{jsessionid}}"
         } ],
         "responses" : {
           "200" : {
@@ -5715,7 +5715,7 @@
           "schema" : {
             "type" : "string"
           },
-          "example" : "6442f3c7da447846514a1a90"
+          "example" : "{{jsessionid}}"
         } ],
         "requestBody" : {
           "content" : {
@@ -5845,7 +5845,7 @@
           "schema" : {
             "type" : "string"
           },
-          "example" : "6442f3c7da447846514a1a90"
+          "example" : "{{jsessionid}}"
         } ],
         "responses" : {
           "200" : {
@@ -5989,7 +5989,7 @@
           "schema" : {
             "type" : "string"
           },
-          "example" : "6442f3c7da447846514a1a90"
+          "example" : "{{jsessionid}}"
         } ],
         "responses" : {
           "200" : {
@@ -6135,7 +6135,7 @@
           "schema" : {
             "type" : "string"
           },
-          "example" : "6442f3c7da447846514a1a90"
+          "example" : "{{jsessionid}}"
         } ],
         "requestBody" : {
           "content" : {
@@ -6277,7 +6277,7 @@
           "schema" : {
             "type" : "string"
           },
-          "example" : "6442f3c7da447846514a1a90"
+          "example" : "{{jsessionid}}"
         } ],
         "responses" : {
           "204" : {
